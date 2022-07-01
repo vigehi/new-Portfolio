@@ -1,3 +1,52 @@
-.new {
-  color: black;
+html, body{
+	font-size:16px;
+	color: #dfdfdf;
+	background-color: #063647; 
 }
+
+a {
+  color: #00d1b2;
+}
+
+a:hover {
+  color: blue;
+}
+
+section{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.section-1 {
+	background: #063647;
+}
+
+.project-text {
+	text-align: justify;
+}
+
+.title {
+	color: #fff;
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+
+.void-background {
+	background-color: transparent; 
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-container > a {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 80px;
+  font-size: 30px;
+  flex-direction: column;
+}
+
+
+
+
