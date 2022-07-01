@@ -1,52 +1,96 @@
-html, body{
-	font-size:16px;
-	color: #dfdfdf;
-	background-color: #063647; 
+* {
+  font-family: "inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
-a {
-  color: #00d1b2;
+#paragraph {
+  color: black;
 }
 
-a:hover {
-  color: blue;
-}
-
-section{
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
-
-.section-1 {
-	background: #063647;
-}
-
-.project-text {
-	text-align: justify;
-}
-
-.title {
-	color: #fff;
-	text-align: left;
-	margin-bottom: 2rem;
-}
-
-
-.void-background {
-	background-color: transparent; 
-}
-.flex-container {
+.mobile-view {
+  margin: 8px 18px;
+  height: 48px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
 }
 
-.flex-container > a {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 80px;
-  font-size: 30px;
+#icon {
+  width: 30px;
+}
+
+.icon {
+  width: 30px;
+}
+
+nav img {
+  width: 30px;
+}
+
+.menu-section {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 8px 18px;
+  height: 100vh;
 }
 
+.social-media-icons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 19px;
+  padding-top: 18px;
+}
 
+#oga {
+  width: 327px;
+  height: 55px;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: black;
+  letter-spacing: 0.37px;
+  padding-bottom: 30px;
+}
 
+#career {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+  color: black;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+}
 
+.content-section {
+  width: 327px;
+  height: 170px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #c8c8d4;
+}
+
+.img-circle {
+  position: absolute;
+  width: 140px;
+  height: 100px;
+  left: -120px;
+  top: 100px;
+  background: #edecff;
+  filter: blur(50px);
+}

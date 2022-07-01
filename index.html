@@ -1,70 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Portfolio</title>
-	<!-- css files -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-	<link rel="stylesheet" href="CSS/styles.css">
-
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-	<meta name="author" content="Hassan Ali">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Portfolio</title>
 </head>
-	<body>
-		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<div class="nav-left">
-						<h1>Edith oga</h1>
-			</div>
-
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#about">About</a>
-				<a class="nav-item" href="#projects">Projects</a>
-				<a class="nav-item" href="#social">Social</a>
-			</div>-->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
-				
-		<!-- About Me -->
-		<section id="about" class="section section-1">
+<body>
 		
-			<div class="container"></br>
-        <h1>Hay there. I'm Mariane</h1>
-        <h2>I'm a software developer</h2>
-        <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-          don’t hestiate to contact me.</p>
-      </div>
-			</div>
-		</section>
-		
-		
-		<!-- Social -->
-		<section id="social" class="section section-3">
-			<div class="container">
-				<div class="has-text-centered">					
-					<h3 class="title is-3">Let's Socialize</h3>
-				</div>
-				<div class="social-container columns">
-          <div class="flex-container">
-            <a href="https://github.com/vigehi/" >
-              <span class="icon">
-                <i class="fa fa-github"></i>
-              </span>
-            </a>
-            <a href="https://www.linkedin.com/in/edith-oga-5708801b8/" >
-              <span class="icon">
-                <i class="fa fa-linkedin"></i>
-              </span>
-            </a> 
-          </div>   
-	</div>
-		</section>	
-		
-		
-	</body>	
+		<header>
+			<nav>
+			  <div class="mobile-view">
+				<p id="paragraph">Edith Oga</p>
+				<img id="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAASFBMVEX///8AAACVlZVAQEDS0tLo6OhJSUlra2v09PS7u7vCwsI3NzekpKS1tbXt7e0oKCiurq5WVlZ/f39wcHAICAjMzMx3d3cfHx8kjWYNAAABMUlEQVR4nO3aW46CQBBG4a7hoiAi3ve/03FmMolJNYkv/FUP59sAR6MNTXUpAAAAAPCB/fBotvcY9msB48E0DmM9YBJd/8dUCzgKA8yOPmA+SQtOsytYpAFmiys4iwvOrkAcYJawQPtDNHu6gou44OIKWnFB6xeEnTRg5wNK1wgDmq5SUDrVjel1a6oGvCy95Pq9Xw/fvod2e2ufHwAApNQNX9sb1h8Q5utN8ox0u/pt66+75PJ/7rUA7Yahsl0omqfUf70PGKUBZv5VknbLVNs0iQNSvj+IL4j/HcT/F+LXgwRrYvx9IcG9scQ/HwAAgISi5wuTaMZSnf2XBHOm+Flb+LwxfuYaP3d+igv87F0ckPL9Qfw5lPizOPHnkeLPZCU4l5bgbF6C84kAAAAA8O4bsD4fvGsgah4AAAAASUVORK5CYII=" alt="No Image" />
+			  </div>
+			</nav>
+		  </header>
+		  <section class="menu-section">
+			<h1 id="oga">Edith Oga</h1>
+			<p id="career">Software Developer</p>
+			<p><img class="img-circle" src="data:image/png;base64,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" alt=""></p>
+			<p class="content-section">
+			  I can help you build a product , feature or website Look through some of
+			  my work and experience! If you like what you see and have a project you
+			  need coded, don’t hestiate to contact me.
+			</p>
+	  
+			<ul class="social-media-icons">
+			  <li>
+				<a href="#">
+				  <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360" alt="Github image" />
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <img
+					id="icon"
+					src="https://image.similarpng.com/very-thumbnail/2021/01/Illustration-of-Linkedin-icon-on-transparent-background-PNG.png"
+					alt="Linkedin image"
+				  />
+				</a>
+			  </li>
+			</ul>
+		  </section>
+</body>
 </html>
