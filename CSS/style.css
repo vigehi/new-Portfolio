@@ -2,12 +2,12 @@
   font-family: "inter", sans-serif;
   margin: 0;
   padding: 0;
-
 }
 
 #paragraph {
   color: black;
 }
+
 #nav {
   margin: 5px 40%;
   height: 48px;
@@ -15,9 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
-   
 
 .mobile-view {
   margin: 8px 18px;
