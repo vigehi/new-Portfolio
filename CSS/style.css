@@ -2,13 +2,22 @@
   font-family: "inter", sans-serif;
   margin: 0;
   padding: 0;
-  color: #fff;
+
 }
 
 #paragraph {
   color: black;
 }
+#nav {
+  margin: 5px 40%;
+  height: 48px;
+  width: 357px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+}
+   
 
 .mobile-view {
   margin: 8px 18px;
