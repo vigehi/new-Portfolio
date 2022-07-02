@@ -51,7 +51,7 @@ h2 {
 }
 
 .landing-text h2 {
-  color: #36b27f;
+  color: blue;
 }
 
 .landing-text h1 {
@@ -121,7 +121,7 @@ h2 {
 }
 
 .work-button {
-  background-color: #36b37e;
+  background-color: blue;
   border: none;
   color: white;
   padding: 12px;
@@ -203,7 +203,7 @@ h2 {
 }
 
 .about-me-button {
-  background-color: #36b37e;
+  background-color: blue;
   border: none;
   color: white;
   padding: 12px;
@@ -274,7 +274,7 @@ h2 {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #36b27f;
+  color: blue;
 }
 
 .chat-text h2 {
@@ -305,7 +305,6 @@ h2 {
 }
 
 #text-area {
-  border: 1px solid #60c095;
   border-radius: 4px;
   padding: 12px;
   font-style: normal;
@@ -317,7 +316,7 @@ h2 {
 }
 
 .get-in-touch-button {
-  background-color: #36b37e;
+  background-color: blue;
   border: none;
   color: white;
   padding: 12px;
@@ -343,7 +342,6 @@ h2 {
 
 footer {
   width: 375px;
-  background-image: url('../image/bottom-vector.png');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-position-y: 280px;
@@ -357,4 +355,8 @@ footer {
   text-align: center;
   color: #42526e;
   padding-bottom: 20px;
+}
+.icon {
+   height: 20px;
+   width: 20px;
 }
