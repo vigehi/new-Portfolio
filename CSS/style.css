@@ -5,9 +5,9 @@
 
 .sectionbackground {
   background-image: url("/image/backgroundimage.png");
-  background: no-repeat;
   background-size: cover;
 }
+
 nav {
   display: flex;
 }
