@@ -38,7 +38,7 @@ nav img {
   color: #172b4d;
 }
 
-.logo {  
+.logo {
   display: flex;
   justify-content: space-between;
   margin: 8px 18px;
@@ -50,8 +50,8 @@ nav img {
   font-size: 18px;
 }
 
-header {
-  display:  flex;
+header{
+  display: flex;
   max-width: 50%;
 }
 
