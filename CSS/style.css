@@ -52,7 +52,8 @@ nav img {
 
 header {
   display: flex;
-  max-width: 50%;
+  justify-content: space-between;
+  gap: 200px;
 }
 
 .desc {
