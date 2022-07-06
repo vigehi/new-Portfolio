@@ -1,207 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="mob-navbar">
-          <a href="#">Edith</a>
-          <img src="assets/download.png" alt="option" />
-        </div>
-      </nav>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" id="logo">Logo</a>
+        <nav>
+            <ul id="nav">
+                <li class="nav-link"><a href="#">Portfolio</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-nav">
+                <div id="menu">
+                    <i class="bar"></i>
+                    <i class="bar"></i>
+                    <i class="bar"></i>
+                </div>
+                <ul id="link">
+                    <li class="mobile-link">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="mobile-link">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="mobile-link">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main>
-      <section class="title-section">
-        <div class="landing-text">
-          <h1>Edith Oga</h1>
-          <h2>Software developer</h2>
-          <p>
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
-          </p>
+
+    <section class="headline-section">
+        <div id="headline-container">
+            <h1 class="headline">
+                I'm Edith, <br> 
+                Glad to see you!
+            </h1>
+            <p class="description">I’m a software developer! I can help you build a product, feature or website
+                Look through some of my work and experience. If you like what you see and have a project you need coded, 
+                don’t hesitate to contact me!
+            </p>
+            <h2 class="connect">LET’S CONNECT</h2>
+
+            <ul class="social-media-icons">
+                <li> <a href="#" target="_blank" >
+                  <img src="images/angelite.png"> </a></li>
+                  <li> <a href="#" target="_blank" >
+                    <img src="images/twitter.png"> </a></li>
+                    <li> <a href="#" target="_blank" >
+                      <img src="images/Linkedin.png"> </a></li>
+                      <li> <a href="#" target="_blank" >
+                        <img src="images/medium.png"> </a></li>
+                        <li> <a href="#" target="_blank" >
+                          <img src="images/github.png"> </a></li>
+            </ul>
         </div>
-        <ul class="social-media-icons">
-          <li>
-            <a href="#">
-              <img class="icon" src="assets/git.png" alt="Git image" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="assets/linked.png" alt="Linkedin image" />
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="recent-works">
-        <div class="grid-container">
-          <div class="my-work-card">
-            <div class="card-image"></div>
-            <div class="my-works-text">
-              <h2>Multi-post Stories Gain+Glory</h2>
-              <ul class="built-with">
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Jav Script</li>
-                <li>html</li>
-              </ul>
-              <input type="button" class="work-button" value="See Project" />
+    </section>
+
+
+    <main class="grid-container">
+        <section class="works-card-tonic">
+            <img class="snapshort" src="./images/Snapshoot-Portfolio.png" alt="snapshoot">
+            <div class="left-block-tonic">
+                <div class="primary-container-tonic">
+                    <h1 class="project-title-tonic">Tonic</h1>
+                    <div class="frame2-tonic">
+                        <div class="client"><h3>CANOPY</h3></div>
+                        <img src="./images/Counter.png" alt="counter image">
+                        <div class="role"><h3>Back End Dev</h3></div>
+                        <img src="./images/Counter.png" alt="counter image" class="dot">
+                        <div class="year"><h3> 2015</h3></div>
+                    </div>
+                </div>
+                <p class="project-description-tonic">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="dev-tools-tonic">
+                    <li class="dev-tool1"><p>html</p></li>
+                    <li class="dev-tool2"><p>css</p></li>
+                    <li class="dev-tool3"><p>javascript</p></li>
+                </ul>
+                <div class="projects-tonic">
+                    <button type="submit" class="go-projects">See projects</button>
+                </div>
+                
             </div>
-          </div>
-          <div class="my-work-card">
-            <div class="card-image"></div>
-            <div class="my-works-text">
-              <h2>Multi-post Stories Gain+Glory</h2>
-              <ul class="built-with">
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Jav Script</li>
-                <li>html</li>
-              </ul>
-              <input type="button" class="work-button" value="See Project" />
+        </section>
+    
+        <section class="works-card">
+            <img class="snapshort" src="./images/Snapshoot-Portfolio1.png" alt="snapshoot">
+            <div class="left-block">
+                <div class="primary-container">
+                    <h1 class="project-title">Multi-Post <br>
+                        Stories</h1>
+                    <div class="frame2">
+                        <div class="client"><h3>CANOPY</h3></div>
+                        <img src="./images/Counter.png" alt="counter image">
+                        <div class="role"><h3>Back End Dev</h3></div>
+                        <img src="./images/Counter.png" alt="counter image" class="dot">
+                        <div class="year"><h3> 2015</h3></div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="dev-tools">
+                    <li class="dev-tool1"><p>html</p></li>
+                    <li class="dev-tool2"><p>css</p></li>
+                    <li class="dev-tool3"><p>javascript</p></li>
+                </ul>
+                <div class="projects">
+                    <button type="submit" class="go-projects">See projects</button>
+                </div>  
             </div>
-          </div>
-          <div class="my-work-card">
-            <div class="card-image"></div>
-            <div class="my-works-text">
-              <h2>Multi-post Stories Gain+Glory</h2>
-              <ul class="built-with">
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Jav Script</li>
-                <li>html</li>
-              </ul>
-              <input type="button" class="work-button" value="See Project" />
+        </section>
+    
+        <section class="works-card-tonic">
+            <img class="snapshort" src="./images/Snapshoot-Portfolio2.png" alt="snapshoot">
+            <div class="left-block-tonic">
+                <div class="primary-container-tonic">
+                    <h1 class="project-title-tonic">Tonic</h1>
+                    <div class="frame2-tonic">
+                        <div class="client"><h3>CANOPY</h3></div>
+                        <img src="./images/Counter.png" alt="counter image">
+                        <div class="role"><h3>Back End Dev</h3></div>
+                        <img src="./images/Counter.png" alt="counter image" class="dot">
+                        <div class="year"><h3> 2015</h3></div>
+                    </div>
+                </div>
+                <p class="project-description-tonic">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="dev-tools-tonic">
+                    <li class="dev-tool1"><p>html</p></li>
+                    <li class="dev-tool2"><p>css</p></li>
+                    <li class="dev-tool3"><p>javascript</p></li>
+                </ul>
+                <div class="projects-tonic">
+                    <button type="submit" class="go-projects">See projects</button>
+                </div>
+                
             </div>
-          </div>
-          <div class="my-work-card">
-            <div class="card-image"></div>
-            <div class="my-works-text">
-              <h2>Multi-post Stories Gain+Glory</h2>
-              <ul class="built-with">
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Jav Script</li>
-                <li>html</li>
-              </ul>
-              <input type="button" class="work-button" value="See Project" />
+        </section>
+    
+    
+        <section class="works-card">
+            <img class="snapshort" src="./images/Snapshoot-Portfolio3.png" alt="snapshoot">
+            <div class="left-block">
+                <div class="primary-container">
+                    <h1 class="project-title">Multi-Post <br>
+                        Stories</h1>
+                    <div class="frame2">
+                        <div class="client"><h3>CANOPY</h3></div>
+                        <img src="./images/Counter.png" alt="counter image">
+                        <div class="role"><h3>Back End Dev</h3></div>
+                        <img src="./images/Counter.png" alt="counter image" class="dot">
+                        <div class="year"><h3> 2015</h3></div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="dev-tools">
+                    <li class="dev-tool1"><p>html</p></li>
+                    <li class="dev-tool2"><p>css</p></li>
+                    <li class="dev-tool3"><p>javascript</p></li>
+                </ul>
+
+                <div class="projects">
+                    <button type="submit" class="go-projects">See projects</button>
+                </div>
+                
             </div>
-          </div>
-          <div class="my-work-card">
-            <div class="card-image"></div>
-            <div class="my-works-text">
-              <h2>Multi-post Stories Gain+Glory</h2>
-              <ul class="built-with">
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Jav Script</li>
-                <li>html</li>
-              </ul>
-              <input type="button" class="work-button" value="See Project" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about-me-section">
-        <div class="about-me">
-          <h2>About me</h2>
-          <p>
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
-          </p>
-          <input type="button" class="about-me-button" value="Get My Resume" />
-        </div>
-        <div class="grid-container2">
-          <div class="my-work-card2">
-            <div class="card-image2">
-              <img src="image/Ellipse.png" alt="eclipse icon" />
-            </div>
-            <div class="my-works-text2">
-              <h2>Languages</h2>
-              <ul class="built-with2">
-                <li>JavaScript</li>
-                <li>Ruby</li>
-                <li>Html</li>
-                <li>Css</li>
-              </ul>
-            </div>
-          </div>
-          <div class="my-work-card2">
-            <div class="card-image2">
-              <img src="image/multiple-box.png" alt="eclipse icon" />
-            </div>
-            <div class="my-works-text2">
-              <h2>Frameworks</h2>
-              <ul class="built-with2">
-                <li>Bootstrap</li>
-                <li>Ruby on rails</li>
-                <li>RSpec</li>
-                <li>Capybara</li>
-                <li>Selenium</li>
-              </ul>
-            </div>
-          </div>
-          <div class="my-work-card2">
-            <div class="card-image2">
-              <img src="image/lightning.png" alt="eclipse icon" />
-            </div>
-            <div class="my-works-text2">
-              <h2>Skills</h2>
-              <ul class="built-with2">
-                <li>Codekit</li>
-                <li>Github</li>
-                <li>Codepan</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="chat-text">
-          <h2>
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </h2>
-        </div>
-      </section>
-      <footer>
-        <div class="input-field">
-          <input
-            type="text"
-            name="full name"
-            class="text-input"
-            placeholder="Full name"
-          />
-          <input
-            type="text"
-            name="Email adress"
-            class="text-input"
-            placeholder="Email adress"
-          />
-          <textarea
-            name="textarea"
-            id="text-area"
-            placeholder="Enter text here"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <div class="button-wrapp">
-          <input
-            type="button"
-            class="get-in-touch-button"
-            value="Get in touch"
-          />
-        </div>
-      </footer>
+        </section>
     </main>
-  </body>
+    
+        <!-- contacts -->
+    <section class="contact-me">
+        <div class="headline-section-co">
+            <div id="headline-container-co">
+                <h1 class="headline-co">
+                    About, <br> 
+                    Myself
+                </h1>
+                <p class="description-co">Hello I’m a software developer! I can help you build a product, feature
+                     or website Look through some of my work and experience! If you like what you see and have a 
+                     project you need coded, don’t hestiate to contact me.
+                </p>
+                <h2 class="connect-co">LET’S CONNECT</h2>
+    
+                <ul class="social-media-icons">
+                  <li> <a href="#" target="_blank" >
+                    <img src="images/angelite.png"> </a></li>
+                    <li> <a href="#" target="_blank" >
+                      <img src="images/twitter.png"> </a></li>
+                      <li> <a href="#" target="_blank" >
+                        <img src="images/Linkedin.png"> </a></li>
+                        <li> <a href="#" target="_blank" >
+                          <img src="images/medium.png"> </a></li>
+                          <li> <a href="#" target="_blank" >
+                            <img src="images/github.png"> </a></li>
+              </ul>
+                <div class="projects-co">
+                    <button type="submit" class="go-projects-co">My resume</button>
+                </div>
+    
+                <div class="skill">
+                    <div class="frame12">
+                        <div class="frame7">
+                            <!-- <span class="languages"><h3>Languages</h3></span> -->
+                            <h3 class="languages">Languages</h3>
+                            <button type="submit" class="dropbtn"><img src="./images/Icon-Chevron-Down-Larger.png" alt=""></button>
+                        </div>
+                        <ul class="language-list">
+                            <li class="frame9">
+                                <div class="lang">
+                                    <img src="./images/Ellipse-1.png" alt="">
+                                    <p>JavaSript</p>
+                                </div>
+                            </li>
+                            <li class="frame10">
+                                <div class="lang">
+                                    <img src="./images/Ellipse-2.png" alt="">
+                                    <p>HTML</p>
+                                </div>
+                            </li>
+                            <li class="frame11">
+                                <div class="lang">
+                                    <img src="./images/Ellipse-3.png" alt="">
+                                    <p>CSS</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="frame-skill">
+                        <div class="frame17">
+                            <!-- <a href="#"><h3>Frameworks</h3></a> -->
+                            <h3>Frameworks</h3>
+                            <button type="submit" class="dropbtn"><img src="./images/Icon-Chevron-Right-Larger.png" alt=""></button>
+                        </div>
+                        <img src="./images/Separator-Bottom.png" alt="" class="separator">
+                        <div class="frame18">
+                            <!-- <a href="#"><h3>Skills</h3></a> -->
+                            <h3>Skills</h3>
+                            <button type="submit" class="dropbtn"><img src="./images/Icon-Chevron-Right-Larger.png" alt=""></button>
+                        </div>
+                        <img src="./images/Separator-Bottom.png" alt="" class="separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
 </html>
