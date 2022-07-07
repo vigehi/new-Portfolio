@@ -8,9 +8,9 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages : HTML and CSS
+- Frameworks : N/A
+- Technologies used : GIT, GITHUB, LINTERS
 
 ## Live Demo (if available)
 
