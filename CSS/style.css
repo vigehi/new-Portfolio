@@ -918,3 +918,13 @@ body.active {
   align-items: center;
   margin: 0;
 }
+
+.contact-me{
+  margin-top: -100px;
+}
+
+.contact-me h2 {
+  color: black;
+  margin-top: -0px;
+  text-align: center;
+}
