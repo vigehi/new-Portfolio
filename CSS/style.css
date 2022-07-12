@@ -918,11 +918,19 @@ body.active {
 }
 
 .contact-edith {
-    background-image: url('images\Ellipse-1.png');
+    background-image: url('/images/Contact.png');
 }
 
 .contact-edith h2 {
     color: black;
     margin-top: -0px;
     text-align: center;
+}
+
+.contact-edith p {
+  color: black;
+  margin-top: -0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
