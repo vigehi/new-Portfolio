@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
@@ -100,7 +102,7 @@ body {
   width: 375px;
   height: 700px;
   margin: 0 auto;
-  background: #fff url('/images/header-background-mobile.png');
+  background: #fff url("/images/backgroundimage.png");
   border-bottom-left-radius: 80px;
   position: relative;
 }
@@ -141,10 +143,9 @@ body.active {
 
 .social-media-icons {
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
+  margin-left: -15px;
   width: 160px;
-  margin-left: 24px;
-  padding-left: 0;
   list-style-type: none;
   animation: width-change 1s ease-in-out 0.5s 1;
 }
@@ -936,13 +937,6 @@ body.active {
   text-align: center;
 }
 
-.contact-edith button {
-  background: white;
-  border: none;
-  border-radius: 8px;
-  margin-left: 80px;
-}
-
 form input {
   background: white;
   padding: 8px;
@@ -993,4 +987,25 @@ hr.rounded {
   border-top: 8px solid black;
   width: 30%;
   border-radius: 5px;
+}
+
+.form-button {
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: 20px;
+  width: 12vw;
+  height: 9vh;
+  left: 0;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  color: #396df2;
+  transition: transform 0.4s ease-in-out;
 }
