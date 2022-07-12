@@ -920,7 +920,7 @@ body.active {
 }
 
 .contact-me{
-  margin-top: -100px;
+  background-image: url(./images/Contact.png);
 }
 
 .contact-me h2 {
