@@ -922,8 +922,8 @@ body.active {
 }
 
 .contact-edith h2 {
-    color: white;
-    margin-top: -0px;
+    color: #ffffff;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -984,6 +984,8 @@ form textarea {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
+  width: 30%;
+  height: 50px;
 }
 
 hr.rounded {
