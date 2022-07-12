@@ -100,7 +100,7 @@ body {
   width: 375px;
   height: 700px;
   margin: 0 auto;
-  background: #fff url(images\header-shapes-mobile.png) 0 45px no-repeat;
+  background: #fff url('/images/header-background-mobile.png');
   border-bottom-left-radius: 80px;
   position: relative;
 }
@@ -153,6 +153,7 @@ body.active {
   from {
     width: 280px;
   }
+
   to {
     width: 160px;
   }
@@ -626,6 +627,7 @@ body.active {
   from {
     width: 280px;
   }
+
   to {
     width: 160px;
   }
@@ -922,14 +924,13 @@ body.active {
 }
 
 .contact-edith h2 {
-  color: #ffffff;
+  color: white;
   margin-top: 40px;
   text-align: center;
 }
 
 .contact-edith p {
-  color: white;
-  margin-top: -0px;
+  color: #fff;
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
