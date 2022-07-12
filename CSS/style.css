@@ -922,15 +922,72 @@ body.active {
 }
 
 .contact-edith h2 {
-    color: black;
+    color: white;
     margin-top: -0px;
     text-align: center;
 }
 
 .contact-edith p {
-  color: black;
+  color: white;
   margin-top: -0px;
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
+}
+
+.contact-edith button {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 80px;
+}
+
+
+form input {
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+form textarea {
+  background: hsl(0, 0%, 100%);
+  width: 200px;
+  height: 170px;
+  padding: 10px;border: 1px solid hsl(198, 16%, 84%);
+}
+
+#username {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 80%;
+}
+
+#email {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+#detail {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+#btn {
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+  color: #396df2;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+hr.rounded {
+  border-top: 8px solid black;
+  width: 30%;
+  border-radius: 5px;
 }
