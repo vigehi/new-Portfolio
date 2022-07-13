@@ -102,7 +102,7 @@ body {
   width: 375px;
   height: 700px;
   margin: 0 auto;
-  background: #fff url(/images/backgroundimage.png);
+  background: #fff url(../images/backgroundimage.png);
   border-bottom-left-radius: 80px;
   position: relative;
 }
@@ -921,7 +921,7 @@ body.active {
 }
 
 .contact-edith {
-  background-image: url(/images/Contact.png);
+  background-image: url(../images/Contact.png);
 }
 
 .contact-edith h2 {
