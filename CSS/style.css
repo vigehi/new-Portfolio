@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background: #e5e5e5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+nav {
+    
+}
