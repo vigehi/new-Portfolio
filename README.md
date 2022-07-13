@@ -3,7 +3,7 @@
 
 #  My-Portfolio
 
-> My Portfolio mobile version skeleton.
+> My Portfolio Desktop version skeleton.
 
 
 ## Built With
