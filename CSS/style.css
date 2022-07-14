@@ -8,9 +8,70 @@ body {
   box-sizing: border-box;
 }
 
+/*mobile version*/
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+
+
+}
+ .navigation a {
+  text-decoration: none;
+  width: 76px;
+  height: 20px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+ }
+
+ .navMenu {
+  display:  none;
+ }
+
+ .menu-section {
+  width: 375px;
+  height: 700px;
+  border-bottom-left-radius: 80px;
+ }
+ .head {
+  width: 920px;
+  height: 122px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 128px 24px 0;
+ /* display: flex;
+  align-items: center;*/
+  letter-spacing: 0.37px;
+  color: #091e42;
+  /*flex: none;
+  order: 0;
+  flex-grow: 0;*/
+}
+
 /* Desktop version */
 @media (min-width: 768px) {
   .mobile-nav {
+    display: none;
+  }
+
+  .navigation img {
     display: none;
   }
 
@@ -28,7 +89,7 @@ body {
     width: 76px;
     height: 20px;
 
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -67,6 +128,7 @@ body {
 
   .section1 {
     position: absolute;
+    width: 100%;
     height: 916px;
     left: 0px;
     top: 1px;
@@ -227,7 +289,7 @@ body {
     order: 1;
     flex-grow: 0;
   }
-  .project-title-tonic {
+  .newme-title-tonic {
     width: 295px;
     height: 36px;
     font-family: "Poppins", sans-serif;
@@ -314,7 +376,7 @@ body {
   .lang1 {
     margin-top: 50px;
   }
-  .dev-tools-tonic {
+  .plangs-tonic {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -328,7 +390,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .dev-tool1 {
+  .plang1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -343,7 +405,7 @@ body {
     left: 30px;
   }
 
-  .dev-tool1 p {
+  .plang1 p {
     width: 29px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -359,7 +421,7 @@ body {
     left: 12px;
   }
 
-  .dev-tool2 {
+  .plang2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -372,7 +434,7 @@ body {
     left: 61px;
   }
 
-  .dev-tool2 p {
+  .plang2 p {
     width: 21px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -386,7 +448,7 @@ body {
     left: 12px;
   }
 
-  .dev-tool3 {
+  .plang3 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -399,7 +461,7 @@ body {
     left: 114px;
   }
 
-  .dev-tool3 p {
+  .plang3 p {
     width: 65px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -413,13 +475,13 @@ body {
     left: 12px;
   }
 
-  .projects {
+  .newmes {
     width: 295px;
     height: 72px;
     margin-top: 50px;
   }
 
-  .go-projects {
+  .go-newmes {
     box-sizing: border-box;
     align-items: center;
     padding: 12px;
@@ -440,7 +502,7 @@ body {
     transition: transform 0.4s ease-in-out;
   }
 
-  .go-projects:hover {
+  .go-newmes:hover {
     transform: scale(1.1);
   }
   .mps {
@@ -453,7 +515,7 @@ body {
     background: url(../assets/Container.png);
     background-repeat: no-repeat;
   }
-  .project-title-mps {
+  .newme-title-mps {
     width: 295px;
     height: 36px;
     font-family: "Poppins", sans-serif;
@@ -472,7 +534,7 @@ body {
   .lang2 {
     margin-top: 50px;
   }
-  .dev-tools-mps {
+  .plangs-mps {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -486,7 +548,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .dev-tool12 {
+  .plang12 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -499,7 +561,7 @@ body {
     left: 114px;
   }
 
-  .dev-tool12 p {
+  .plang12 p {
     width: 100px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -557,7 +619,7 @@ body {
     order: 1;
     flex-grow: 0;
   }
-  .project-title-fb360 {
+  .newme-title-fb360 {
     width: 295px;
     height: 36px;
     font-family: "Poppins", sans-serif;
@@ -644,7 +706,7 @@ body {
   .lang1 {
     margin-top: 50px;
   }
-  .dev-tools-fb360 {
+  .plangs-fb360 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -658,7 +720,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .dev-tool1 {
+  .plang1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -673,7 +735,7 @@ body {
     left: 30px;
   }
 
-  .dev-tool1 p {
+  .plang1 p {
     width: 29px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -689,7 +751,7 @@ body {
     left: 12px;
   }
 
-  .dev-tool2 {
+  .plang2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -702,7 +764,7 @@ body {
     left: 61px;
   }
 
-  .dev-tool2 p {
+  .plang2 p {
     width: 21px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -716,7 +778,7 @@ body {
     left: 12px;
   }
 
-  .dev-tool3 {
+  .plang3 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -729,7 +791,7 @@ body {
     left: 114px;
   }
 
-  .dev-tool3 p {
+  .plang3 p {
     width: 65px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -742,7 +804,7 @@ body {
     top: 4px;
     left: 12px;
   }
-  .dev-tool11 {
+  .plang11 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -755,7 +817,7 @@ body {
     left: 114px;
   }
 
-  .dev-tool11 p {
+  .plang11 p {
     width: 100px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -769,13 +831,13 @@ body {
     left: 12px;
   }
 
-  .projects {
+  .newmes {
     width: 295px;
     height: 72px;
     margin-top: 50px;
   }
 
-  .go-projects {
+  .go-newmes {
     box-sizing: border-box;
     align-items: center;
     padding: 12px;
@@ -796,7 +858,7 @@ body {
     transition: transform 0.4s ease-in-out;
   }
 
-  .go-projects:hover {
+  .go-newmes:hover {
     transform: scale(1.1);
   }
   .uber {
@@ -809,7 +871,7 @@ body {
     background: url(../assets/Container.png);
     background-repeat: no-repeat;
   }
-  .project-title-uber {
+  .newme-title-uber {
     width: 295px;
     height: 36px;
     font-family: "Poppins", sans-serif;
@@ -841,7 +903,7 @@ body {
   .lang2 {
     margin-top: 50px;
   }
-  .dev-tools-uber {
+  .plangs-uber {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -853,7 +915,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .dev-tool12 {
+  .plang12 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -866,7 +928,7 @@ body {
     left: 114px;
   }
 
-  .dev-tool12 p {
+  .plang12 p {
     width: 150px;
     height: 16px;
     font-family: "Poppins", sans-serif;
@@ -899,13 +961,13 @@ body {
     color: #7a869a;
     top: 8px;
   }
-  .projects1 {
+  .newmes1 {
     width: 295px;
     height: 72px;
     margin-top: 50px;
   }
 
-  .go-projects1 {
+  .go-newmes1 {
     box-sizing: border-box;
     align-items: center;
     padding: 12px;
@@ -926,7 +988,7 @@ body {
     transition: transform 0.4s ease-in-out;
   }
 
-  .go-projects1:hover {
+  .go-newmes1:hover {
     transform: scale(1.1);
   }
 
@@ -979,13 +1041,13 @@ body {
     /* Neutrals/N600 */
     color: #344563;
   }
-  .projects2 {
+  .newmes2 {
     width: 350px;
     height: 72px;
     margin-top: 50px;
   }
 
-  .go-projects2 {
+  .go-newmes2 {
     box-sizing: border-box;
     align-items: center;
     padding: 12px;
@@ -1006,7 +1068,7 @@ body {
     transition: transform 0.4s ease-in-out;
   }
 
-  .go-projects2:hover {
+  .go-newmes2:hover {
     transform: scale(1.1);
   }
   .tongue{
