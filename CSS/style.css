@@ -104,7 +104,9 @@ body {
   width: 375px;
   height: 700px;
   margin: 0 auto;
-  background: #fff url(./assets/bg.svg) 0 45px no-repeat;
+  background: url(../assets/bg.svg);
+  background-color: #fff;
+  background-repeat: no-repeat;
   border-bottom-left-radius: 80px;
   position: relative;
 }
@@ -206,7 +208,6 @@ body.active {
 .snapshort {
   width: 295px;
   height: 220px;
-  background: url(blog_drbl_4x.png);
   border-radius: 8px;
   top: 16px;
   left: 16px;
@@ -583,7 +584,6 @@ body.active {
   width: 326px;
   height: 1100px;
   margin: 0 auto;
-  background: #fff url(./images/about-myself.png) 0 45px no-repeat;
   border-top-right-radius: 80px;
   margin-top: 80px;
 }
@@ -818,7 +818,6 @@ body.active {
   height: 48px;
   left: 12px;
   top: calc(50% - 48px / 2 - 0.36px);
-  background: url(html5-512.png);
 }
 
 .newme11 {
@@ -839,7 +838,6 @@ body.active {
   width: 48px;
   height: 48px;
   top: calc(50% - 48px / 2 - 0.36px);
-  background: url(images.jpg);
   left: 12px;
 }
 
@@ -931,7 +929,7 @@ body.active {
   justify-content: center;
   width: 375px;
   height: 779px;
-  background: #6070ff url(./images/contact-form-shapes-mobile.png) 153px 21px no-repeat;
+  background: #6070ff url(../assets/cnt.svg) 153px 21px no-repeat;
   margin: 0 auto;
   border-top-left-radius: 80px;
   position: relative;
@@ -1090,7 +1088,7 @@ textarea {
   .head-section {
     width: 100%;
     height: 846px;
-    background: #fff url(./images/Header-desktop-bg.png) 100% 73px no-repeat;
+    background: #fff url(../assets/bg.svg) 100% 73px no-repeat;
     background-size: contain;
     border-bottom-left-radius: 150px;
   }
@@ -1405,7 +1403,7 @@ textarea {
     width: 100%;
     height: 846px;
     margin-top: -256px;
-    background: #6070ff url(./images/contact-form-background-shapes.svg) 100% 79px no-repeat;
+    background: #6070ff url(../assets/cnt.svg) 100% 79px no-repeat;
     align-items: center;
   }
 
