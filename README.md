@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link]
+[Live Demo Link]https://vigehi.github.io/new-Portfolio/
 
 
 ## Getting Started
