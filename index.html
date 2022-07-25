@@ -23,9 +23,12 @@
         </ul>
         <div class="mobile-nav">
           <div id="menu">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="bar"></i>
+         
             <i class="bar"></i>
             <i class="bar"></i>
-            <i class="bar"></i>
+          </a>
           </div>
           <ul id="link">
             <li class="mobile-link">
@@ -340,5 +343,15 @@
         <img src="./images/Shape.svg" alt="Separator" class="bottom-line" />
       </div>
     </section>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("link");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
