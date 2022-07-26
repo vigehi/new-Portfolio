@@ -14,22 +14,37 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" id="logo">edith</a>
-      <nav>
+     <!-- <a href="#" id="logo">edith</a>-->
+      <nav class="navBar" id="navbar">
+        <a href="#header" class="navLogo">edith</a>
+       <ul class="navMenu leftArrow">
+          <li class="navItem">
+            <a href="#portfolio" class="navLink">Portfolio <span class="navSpan"></span></a>
+          </li>
+          <li class="navItem">
+            <a href="#about" class="navLink"
+              >About <span class="navAbout"></span></a
+            >
+          </li>
+          <li class="navItem">
+            <a href="#contact" class="navLink">Contact <span class="navSpan"></span></a>
+          </li>
+<li class="navItem">
+          </li>
+        </ul>
+        <a href="#header" class="mobile-logo">edith</a>
         <ul id="nav">
           <li class="navigation"><a href="#">Portfolio</a></li>
           <li class="navigation"><a href="#">About</a></li>
           <li class="navigation"><a href="#">Contact</a></li>
         </ul>
         <div class="mobile-nav">
-          <div id="menu">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="bar"></i>
-         
-            <i class="bar"></i>
-            <i class="bar"></i>
-          </a>
+          <div class="hamburgerMenu">
+            <span class="hamburgerLine"></span>
+            <span class="hamburgerLine"></span>
+            <span class="hamburgerLine"></span>
           </div>
+         </div>
           <ul id="link">
             <li class="mobile-link">
               <a href="#">Portfolio</a>
@@ -41,7 +56,6 @@
               <a href="#">Contact</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
@@ -343,15 +357,6 @@
         <img src="./images/Shape.svg" alt="Separator" class="bottom-line" />
       </div>
     </section>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("link");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-      </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
