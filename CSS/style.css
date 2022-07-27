@@ -120,16 +120,19 @@ body {
     top: 0.2rem;
     padding-top: 60px;
     flex-direction: column;
-    background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 51%;
     height: 100vh;
     text-align: start;
     padding-left: 30px;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgb(0 0 0 / 5%);
-    margin-left: 150px;
+  }
+
+  .leftArrow {
+    background-color: #6070ff;
+    opacity: 0.8;
+    width: 340px;
   }
 
   .navSpan {
@@ -151,6 +154,7 @@ body {
 
   .navItem {
     margin: 2.5rem 0;
+    color: white;
   }
 
   .navImg {
