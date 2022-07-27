@@ -76,8 +76,8 @@ body {
   }
 
   .navLink {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 800;
     color: #fff;
   }
 
@@ -95,7 +95,7 @@ body {
     color: #6070ff;
     margin-left: -24px;
   }
-
+  
   .navBar {
     display: flex;
     position: fixed;
@@ -111,7 +111,7 @@ body {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #000;
+    background-color: #6070ff;
   }
 
   .navMenu {
@@ -135,6 +135,11 @@ body {
     margin-top: -10px;
     width: 375px;
     margin-left: 0;
+  }
+
+  .leftArrow.active {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
   }
 
   .navSpan {
@@ -179,6 +184,11 @@ body {
 
   .hamburgerMenu.active .hamburgerLine:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hamburgerMenu.active .hamburgerLine:nth-child(1),
+  .hamburgerMenu.active .hamburgerLine:nth-child(3) {
+    background: white;
   }
 }
 
