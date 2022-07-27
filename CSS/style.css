@@ -76,9 +76,9 @@ body {
   }
 
   .navLink {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #6070ff;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
   }
 
   .navLink:hover {
@@ -95,7 +95,7 @@ body {
     color: #6070ff;
     margin-left: -24px;
   }
-
+  
   .navBar {
     display: flex;
     position: fixed;
@@ -120,16 +120,26 @@ body {
     top: 0.2rem;
     padding-top: 60px;
     flex-direction: column;
-    background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 51%;
     height: 100vh;
     text-align: start;
     padding-left: 30px;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgb(0 0 0 / 5%);
-    margin-left: 150px;
+  }
+
+  .leftArrow {
+    background-color: #6070ff;
+    opacity: 0.8;
+    margin-top: -10px;
+    width: 375px;
+    margin-left: 0;
+  }
+
+  .leftArrow.active {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
   }
 
   .navSpan {
@@ -151,6 +161,7 @@ body {
 
   .navItem {
     margin: 2.5rem 0;
+    color: white;
   }
 
   .navImg {
@@ -173,6 +184,11 @@ body {
 
   .hamburgerMenu.active .hamburgerLine:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hamburgerMenu.active .hamburgerLine:nth-child(1),
+  .hamburgerMenu.active .hamburgerLine:nth-child(3) {
+    background: white;
   }
 }
 
@@ -790,7 +806,7 @@ body.active {
   background-color: #0c63e7;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .skill-list {
@@ -1591,4 +1607,3 @@ textarea {
     display: none;
   }
 }
-
