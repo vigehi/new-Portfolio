@@ -95,7 +95,7 @@ body {
     color: #6070ff;
     margin-left: -24px;
   }
-  
+
   .navBar {
     display: flex;
     position: fixed;
@@ -1606,4 +1606,5 @@ textarea {
   .bottom-line {
     display: none;
   }
+
 }
