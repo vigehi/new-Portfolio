@@ -3,14 +3,6 @@ const navMenu = document.querySelector('.navMenu');
 const navLink = document.querySelectorAll('.navLink');
 const line = document.querySelector('.hamburgerLine')
 function mobileMenu() {
-/*  if(hamburgerMenu.classList.contains('active')){
-    //hamburgerMenu.style.color = 'black'
-
-  }
-
-  else {
-    hamburgerMenu.style.color = 'white'
-  }*/
   hamburgerMenu.classList.toggle('active');
   navMenu.classList.toggle('active');
 }
