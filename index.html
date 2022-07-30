@@ -16,15 +16,21 @@
     ></script>
   </head>
   <body>
+          <div id="projectDetails" class="modal">
+            <!-- Modal content -->
+            <div id="modalContent" class="modal-content">
+              <span class="close">&times;</span>
+              <div id="popupProjectCard">
+                <!-- Details-Popup window will be injected here -->
+              </div>
+            </div>
+          </div>
     <header class="header">
       <!-- <a href="#" id="logo">edith</a>-->
       <nav class="navBar" id="navbar">
         <a href="#header" class="navLogo">edith</a>
-
-        <ul class="navMenu leftArrow">
-          <li>
-            <img src="./assets/Shape.png" alt="image" class="shape" />
-          </li>
+        <hr class="rounded">
+       <ul class="navMenu leftArrow">
           <li class="navItem">
             <a href="#portfolio" class="navLink"
               >Portfolio <span class="navSpan"></span
@@ -106,7 +112,6 @@
         </ul>
       </div>
     </section>
-
     <main class="grid-container" id="portfolio">
       <section class="works-card-tonic">
         <img
@@ -134,12 +139,11 @@
             <li class="plang2"><p>css</p></li>
             <li class="plang3"><p>javascript</p></li>
           </ul>
-          <form action="https://github.com/vigehi" class="ediths-tonic">
-            <button type="submit" class="go-ediths">see projects</button>
-          </form>
+          <div class="action ediths-tonic">
+            <button id="seeProjBtn1" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(1)">see projects</button>
+          </div>
         </div>
       </section>
-
       <section class="works-card">
         <img class="snapshort" src="./assets/mps.png" alt="Snapshot" />
         <div class="left-block">
@@ -162,9 +166,9 @@
             <li class="plang2"><p>css</p></li>
             <li class="plang3"><p>javascript</p></li>
           </ul>
-          <form action="https://github.com/vigehi" class="ediths">
-            <button type="submit" class="go-ediths">see projects</button>
-          </form>
+          <div class="action ediths-tonic">
+            <button id="seeProjBtn2" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(2)">see projects</button>
+          </div>
         </div>
       </section>
 
@@ -194,9 +198,9 @@
             <li class="plang2"><p>css</p></li>
             <li class="plang3"><p>javascript</p></li>
           </ul>
-          <form action="https://github.com/vigehi" class="ediths-tonic">
-            <button type="submit" class="go-ediths">see projects</button>
-          </form>
+          <div class="action ediths-tonic">
+            <button id="seeProjBtn3" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(3)">see projects</button>
+          </div>
         </div>
       </section>
 
@@ -222,14 +226,12 @@
             <li class="plang2"><p>css</p></li>
             <li class="plang3"><p>javascript</p></li>
           </ul>
-
-          <form action="https://github.com/vigehi" class="ediths">
-            <button type="submit" class="go-ediths">see projects</button>
-          </form>
+          <div class="action ediths-tonic">
+            <button id="seeProjBtn2" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(4)">see projects</button>
+          </div>
         </div>
       </section>
     </main>
-
     <section class="edith" id="about">
       <div class="head-section-co">
         <div id="head-container-co">
