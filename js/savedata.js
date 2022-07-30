@@ -1,25 +1,22 @@
-// To save form data in the local storage and retrive it on window load
-const formEl = document.querySelector('#contact-form');
-const userName = formEl.querySelector('#name');
-const userEmail = formEl.querySelector('#email');
-const userMesssage = formEl.querySelector('#message');
+const formStorage = document.getElementById('contact-form');
 
-const saveData = () => {
-  const formData = {
-    name: userName.value,
-    email: userEmail.value,
-    message: userMesssage.value,
+formStorage.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const obj = {
+    name: document.querySelector('#name').value,
+    email: document.querySelector('#email').value,
+    message: document.querySelector('#message').value,
   };
-  localStorage.setItem('sessionData', JSON.stringify(formData));
-};
+  localStorage.setItem('DATA', JSON.stringify(obj));
+});
 
-userName.addEventListener('input', saveData);
-userEmail.addEventListener('input', saveData);
-userMesssage.addEventListener('input', saveData);
+const dataValue = localStorage.getItem('DATA');
+const getDataValue = JSON.parse(dataValue);
 
 window.addEventListener('load', () => {
-  const serializeFormData = JSON.parse(localStorage.getItem('sessionData'));
-  userName.value = serializeFormData.name;
-  userEmail.value = serializeFormData.email;
-  userMesssage.value = serializeFormData.message;
+  if (localStorage.getItem('DATA')) {
+    document.querySelector('#name').value = getDataValue.name;
+    document.querySelector('#email').value = getDataValue.email;
+    document.querySelector('#message').value = getDataValue.message;
+  }
 });
