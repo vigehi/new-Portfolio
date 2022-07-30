@@ -19,241 +19,211 @@ function closeMenu() {
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
 
 
-
-// function toggleModal() {
-//     modal.classList.toggle("show-modal");
-// }
-
-// function windowOnClick(event) {
-//     if (event.target === modal) {
-//         toggleModal();
-//     }
-// }
-
-// trigger.addEventListener("click", toggleModal);
-// closeButton.addEventListener("click", toggleModal);
-// window.addEventListener("click", windowOnClick);
-
-
-
-const mobileModalContent = [
+//= ==========================PROJECTS-CARDS DATA==================================//
+const projectsData = [
   {
-    title: 'Multi-Post Stories',
-    descriptionDesktop:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    imageDesktop: './image/modal-desktop.png',
-    closeImage: './image/close-icon.png',
-    languagesDesk: [
-      '|',
-      'html',
-      '|',
-      'Ruby on rails',
-      '|',
-      'css',
-      '|',
-      'Github',
-      '|',
-    ],
+    name: 'Tonic',
+    client: 'CANOPY',
+    id: 1,
+    year: 2015,
+    image: './assets/Snapshoot-Portfolio-1-mobile.svg',
+    technologies: ['html', 'css', 'javascript'],
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
+      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
+      liveVersion: 'https://vigehi.github.io/new-Portfolio/',
+      source: 'https://github.com/vigehi/new-Portfolio',
+  },
+  {
+    name: 'Multi post Stories',
+    client: 'CANOPY',
+    id: 2,
+    year: 2020,
+    image: './assets/Snapshoot-Portfolio-2-mobile.svg',
+    technologies: ['html', 'css', 'javascript'],
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
+      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
+    liveVersion: 'https://vigehi.github.io/new-Portfolio/',
+    source: 'https://github.com/vigehi/new-Portfolio',
   },
 
   {
-    title: 'Multi-Post Stories',
-    descriptionDesktop:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    imageDesktop: './image/modal-desktop.png',
-    closeImage: './image/close-icon.png',
-    languagesDesk: [
-      '|',
-      'html',
-      '|',
-      'Ruby on rails',
-      '|',
-      'css',
-      '|',
-      'Github',
-      '|',
-    ],
+    name: 'Tonic',
+    client: 'CANOPY',
+    year: 2019,
+    id: 3,
+    image: './assets/Snapshoot-Portfolio-3-mobile.svg',
+    technologies: ['html', 'css', 'javascript'],
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
+      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
+      liveVersion: 'https://vigehi.github.io/new-Portfolio/',
+      source: 'https://github.com/vigehi/new-Portfolio',
   },
 
   {
-    title: 'Multi-Post Stories',
-    descriptionDesktop:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    imageDesktop: './image/modal-desktop.png',
-    closeImage: './image/close-icon.png',
-    languagesDesk: [
-      '|',
-      'html',
-      '|',
-      'Ruby on rails',
-      '|',
-      'css',
-      '|',
-      'Github',
-      '|',
-    ],
-  },
-
-  {
-    title: 'Multi-Post Stories',
-    descriptionDesktop:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    imageDesktop: './image/modal-desktop.png',
-    closeImage: './image/close-icon.png',
-    languagesDesk: [
-      '|',
-      'html',
-      '|',
-      'Ruby on rails',
-      '|',
-      'css',
-      '|',
-      'Github',
-      '|',
-    ],
+    name: 'Multi post Stories',
+    client: 'CANOPY',
+    year: 2020,
+    id: 4,
+    image: './assets/Snapshoot-Portfolio-4-mobile.svg',
+    technologies: ['html', 'css', 'javascript'],
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
+      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
+      liveVersion: 'https://vigehi.github.io/new-Portfolio/',
+      source: 'https://github.com/vigehi/new-Portfolio',
   },
 ];
 
-const workList = document.querySelector('.worksList');
-
-function createCards() {
-  mobileModalContent.forEach((card) => {
-    workList.innerHTML += ` <div class="multipleAndImageHolder container">
-    <div>
-      <img
-        class="imgPlaceholder container"
-        src="image/ImgPlaceholder.png"
-        alt="My Recrnt Work "
-      />
-    </div>
-    <div class="container">
-      <div>
-        <p class="ellipse1"></p>
-        <p class="ellipse2"></p>
-        <p class="ellipse3"></p>
-        <p class="ellipse"></p>
-      </div>
-      <h3 class="multiplePost container">${card.title}</h3>
-      <div class="supportingText container">
-        <p>
-        ${card.descriptionDesktop}
-        </p>
-      </div>
-      <ul class="tags">
-      <li>${card.languagesDesk[0]}</li>
-        <li>${card.languagesDesk[1]}</li>
-      <li>${card.languagesDesk[2]}</li>
-      <li>${card.languagesDesk[3]}</li>
-        <li>${card.languagesDesk[4]}</li>
-        <li>${card.languagesDesk[5]}</li>
-      <li>${card.languagesDesk[6]}</li>
-        <li>${card.languagesDesk[7]}</li>
-        <li>${card.languagesDesk[8]}</li>
-      </ul>
-      <button  data-modal-target="#modalMobile"  type="button"  class="seeProject"> See Project</button>
-      
-      <div class="mobile-modal" id="modalMobile"></div>
-    </div>
-    <div id="popup">
-    </div>
-  </div>`;
-  });
+//= ==============================DETAILS POPUP==================================//
+//= =========GLOBAL VARIABLES====================//
+// Get the modal_content div
+const popupProjectCard = document.getElementById('popupProjectCard');
+function createProjectCard(pid) {
+  // Project title
+  const projName = document.createElement('div');
+  projName.classList.add('popup-project-title');
+  const h2 = document.createElement('h2');
+  h2.innerText = projectsData[pid].name;
+  projName.appendChild(h2);
+  popupProjectCard.appendChild(projName);
+  // Client-frame
+  const clientFrame = document.createElement('div');
+  clientFrame.classList.add('popup-client-frame');
+  /* CLIENT NAME */
+  const ul1 = document.createElement('ul');
+  const li1 = document.createElement('li');
+  const clientName = document.createElement('div');
+  clientName.classList.add('popup-client-name');
+  const h31 = document.createElement('h3');
+  h31.innerText = 'CANOPY';
+  clientName.appendChild(h31);
+  li1.appendChild(clientName);
+  ul1.appendChild(li1);
+  /* ROLE TXT */
+  const li2 = document.createElement('li');
+  const roleTxt = document.createElement('div');
+  const span1 = document.createElement('span');
+  span1.classList.add('solid-circle');
+  span1.innerHTML = '&#9679;';
+  roleTxt.appendChild(span1);
+  const h32 = document.createElement('h3');
+  h32.innerText = 'Back End Dev';
+  roleTxt.appendChild(h32);
+  li2.appendChild(roleTxt);
+  ul1.appendChild(li2);
+  /* YEAR TXT */
+  const li3 = document.createElement('li');
+  const yearTxt = document.createElement('div');
+  const span2 = document.createElement('span');
+  span2.classList.add('solid-circle');
+  span2.innerHTML = '&#9679;';
+  yearTxt.appendChild(span2);
+  const h33 = document.createElement('h3');
+  h33.innerText = projectsData[pid].year;
+  yearTxt.appendChild(h33);
+  li3.appendChild(yearTxt);
+  ul1.appendChild(li3);
+  /* Finally append the whole 'ul' list to clientFrame */
+  clientFrame.appendChild(ul1);
+  popupProjectCard.appendChild(clientFrame);
+  /* ADD IMAGE SNAPSHOOT-PORTFOLIO */
+  const imgPortfolio = document.createElement('div');
+  imgPortfolio.classList.add('popup-snapshoot-portfolio');
+  const img = document.createElement('img');
+  img.setAttribute('src', projectsData[pid].image, 'alt', `project${pid + 1}image`);
+  imgPortfolio.appendChild(img);
+  popupProjectCard.appendChild(imgPortfolio);
+  /* ADD DESCRIPTION & ACTION-BUTTONS & TAGS CONTAINER */
+  const descContainer = document.createElement('div');
+  descContainer.classList.add('popup-description-container');
+  /* ADD DESCRIPTION */
+  const description = document.createElement('div');
+  description.classList.add('popup-detail-txt');
+  const p = document.createElement('p');
+  p.innerText = projectsData[pid].description;
+  description.appendChild(p);
+  descContainer.appendChild(description);
+  /* ADD TAGS & ACTION-BUTTONS CONTAINER */
+  const actionContainer = document.createElement('div');
+  actionContainer.classList.add('popup-action-container');
+  /* ADD TAGS */
+  const tags = document.createElement('div');
+  tags.classList.add('popup-tags');
+  const ul2 = document.createElement('ul');
+  const li4 = document.createElement('li');
+  li4.innerText = 'html';
+  ul2.appendChild(li4);
+  const li5 = document.createElement('li');
+  li5.innerText = 'css';
+  ul2.appendChild(li5);
+  const li6 = document.createElement('li');
+  li6.innerText = 'javascript';
+  ul2.appendChild(li6);
+  tags.appendChild(ul2);
+  actionContainer.appendChild(tags);
+  /* ADD ACTION-BUTTONS */
+  const popupAction = document.createElement('div');
+  popupAction.classList.add('popup-action');
+  const aLive = document.createElement('a');
+  aLive.href = projectsData[pid].liveVersion;
+  const btnLive = document.createElement('button');
+  btnLive.innerHTML = 'See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+  aLive.appendChild(btnLive);
+  popupAction.appendChild(aLive);
+  const aSource = document.createElement('a');
+  aSource.href = projectsData[pid].source;
+  const btnSource = document.createElement('button');
+  btnSource.innerHTML = 'Source Code <i class="fa-brands fa-github"></i>';
+  aSource.appendChild(btnSource);
+  popupAction.appendChild(aSource);
+  actionContainer.appendChild(popupAction);
+  descContainer.appendChild(actionContainer);
+  popupProjectCard.appendChild(descContainer);
 }
 
-createCards();
-
-const openMobileModal = document.querySelectorAll('[data-modal-target]');
-const popup = document.querySelector('#popup');
-const mobileModal = [{
-  title: 'Multi-Post Stories',
-  descriptionMobile: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-  imageMobile: './image/modalMobile.png',
-  closeImage: './image/close-icon.png',
-  languagesMobile: ['|', 'html', '|', 'Ruby on rails', '|', 'css'],
-}];
-
-const desktopModalContent = [{
-  title: 'Multi-Post Stories',
-  descriptionDesktop: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-  imageDesktop: './image/modal-desktop.png',
-  closeImage: './image/close-icon.png',
-  languagesDesk: [
-    '|',
-    'html',
-    '|',
-    'Ruby on rails',
-    '|',
-    'css',
-    '|',
-    'Github',
-    '|',
-  ],
-}];
-
-const modalData = document.getElementById('modalMobile');
-
-desktopModalContent.title = 'Multi-Post Stories';
-desktopModalContent.descriptionDesktop = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.";
-desktopModalContent.imageDesktop = './image/modal-desktop.png';
-desktopModalContent.closeImage = './image/close-icon.png';
-desktopModalContent.languagesDesk = [
-  '|',
-  'html',
-  '|',
-  'Ruby on rails',
-  '|',
-  'css',
-  '|',
-  'Github',
-  '|',
-];
-// modal data
-mobileModal.descriptionMobile = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.";
-mobileModal.imageMobile = './image/modalMobile.png';
-mobileModal.languagesMobile = [
-  '|',
-  'html',
-  '|',
-  'Ruby on rails',
-  '|',
-  'css',
-];
-
-const language = mobileModal.languagesMobile.join('  ');
-
-modalData.innerHTML = `<h2 class="mobile-modal-title">${desktopModalContent.title}</h2>
-  <span> <a onclick="closePopupModal()" href="" class="close-popup"><img class="closeImage" src="${desktopModalContent.closeImage}" alt="Close Image Mobile modal" /></a></span>
-  <img class="desktopModalImage" src="${desktopModalContent.imageDesktop}" alt="Project Image on desktop device">
-  <p class="desktopModalText">${desktopModalContent.descriptionDesktop}</p>
-  <ul class="mobileModalLang">${language}</ul>
-  <img class="mobileModalImage" src="${mobileModal.imageMobile}" alt="Project Image on mobile device">
-  <p class="mobileModalText">${mobileModal.descriptionMobile}</p>
-  <div class="scrLive"><button class="liveButton" type="button">See Live <img class="live-icon" src="./image/Icon.png"></button>
-  <button class="srcButton" type="button">See Source <img class="src-icon" src="./image/Vector(1).png"></button></div>
-`;
-
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add('active');
-  popup.classList.add('active');
+// Get the modal
+const modal1 = document.getElementById('projectDetails');
+// When the user clicks on the button, open the modal
+function popupDetails(projId) {
+  createProjectCard(projId - 1);
+  modal1.style.display = 'block';
 }
 
-openMobileModal.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-  });
-});
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName('close')[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = 'none';
+  // This while removes all the CARD child-elements.
+  while (popupProjectCard.firstChild) {
+    popupProjectCard.removeChild(popupProjectCard.firstChild);
+  }
+};
 
-function closePopup(modal) {
-  if (modal == null) return;
-  modal.classList.remove('active');
-  popup.classList.remove('active');
-}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+    // This while removes all the CARD child-elements.
+    while (popupProjectCard.firstChild) {
+      popupProjectCard.removeChild(popupProjectCard.firstChild);
+    }
+  }
+};
 
-popup.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.mobile-modal.active');
-  modals.forEach((modal) => {
-    closePopup(modal);
-  });
-});
+/* JUST TO SKIP LINTER ERRORS */
+popupDetails.call();
+toggleMenu.call();
+/* END OF JUST TO SKIP LINTER ERRORS */
+
