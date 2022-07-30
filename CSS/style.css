@@ -1365,6 +1365,11 @@ textarea {
     position: fixed;
   }
 
+  .email-fail {
+    margin-top: 380px;
+    margin-left: 0;
+  }
+
   .mobile-nav {
     display: none;
   }
@@ -1821,4 +1826,26 @@ textarea {
     display: none;
   }
 
+}
+ 
+#email-fail-id {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-align: left;
+  font-weight: 600;
+}
+
+.email-fail {
+  display: none;
+  align-items: center;
+  position: relative;
+  margin-left: 100px;
+  color: red;
+}
+
+#email-fail-id {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-align: left;
+  font-weight: 600;
 }
