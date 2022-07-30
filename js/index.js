@@ -227,3 +227,21 @@ popupDetails.call();
 toggleMenu.call();
 /* END OF JUST TO SKIP LINTER ERRORS */
 
+// This function validates the email on the formspree
+function ValidateEmail(inputText) {
+  const mailformat = '.*[A-Z]+.*';
+  if (!inputText.match(mailformat)) {
+    document.getElementById('email-fail-id').style.display = 'none';
+    return true;
+  }
+  document.getElementById('email-fail-id').style.display = 'flex';
+  return false;
+}
+
+function myFunction(e) { // eslint-disable-line no-unused-vars
+  if (!ValidateEmail(e.value)) {
+    document.querySelector('.contact-form-btn').setAttribute('disabled', 'true');
+  } else {
+    document.querySelector('.contact-form-btn').removeAttribute('disabled', 'true');
+  }
+}

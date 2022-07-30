@@ -1824,4 +1824,17 @@ textarea {
     text-align: left;
     font-weight: 600;
   }
+
+  .email-fail {
+    margin-top: 380px;
+    margin-left: 0;
+  }
+}
+
+.email-fail {
+  display: none;
+  align-items: center;
+  position: relative;
+  margin-left: 100px;
+  color: red;
 }
