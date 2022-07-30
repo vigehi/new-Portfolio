@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
@@ -405,7 +406,6 @@ body.active {
 .popup-tags ul {
   display: flex;
   padding: 0;
-  
 }
 
 .popup-tags ul li {
@@ -417,7 +417,8 @@ body.active {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-} 
+}
+
 /* The Close Button */
 .close {
   color: #aaa;
@@ -461,11 +462,11 @@ body.active {
 }
 
 .fa-arrow-up-right-from-square::before {
-  content: "\f08e"
+  content: "\f08e";
 }
 
-.fa-brands, .fab {
-  font-family: "Font Awesome 6 Brands";
+.fa-brands,
+.fab {
   font-weight: 400;
 }
 
@@ -1502,9 +1503,9 @@ textarea {
     margin-bottom: -500px;
   }
 
-   /* ============================Start of Desktop-Details Popup Window======================= */
+  /* ============================Start of Desktop-Details Popup Window======================= */
 
-   .modal-content {
+  .modal-content {
     display: block;
     padding: 40px 60px;
   }
@@ -1820,5 +1821,4 @@ textarea {
   .bottom-line {
     display: none;
   }
-
 }
