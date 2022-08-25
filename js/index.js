@@ -22,19 +22,16 @@ navLink.forEach((n) => n.addEventListener("click", closeMenu));
 //= ==========================PROJECTS-CARDS DATA==================================//
 const projectsData = [
   {
-    name: 'Tonic',
-    client: 'CANOPY',
+    name: 'To do list',
+    client: 'Myself',
     id: 1,
     year: 2015,
-    image: './assets/Snapshoot-Portfolio-1-mobile.svg',
+    image: './assets/img1.jpg',
     technologies: ['html', 'css', 'javascript'],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-      liveVersion: 'https://vigehi.github.io/new-Portfolio/',
-      source: 'https://github.com/vigehi/new-Portfolio',
+    'This is a simple web application built with webpack. It allows a user to add what to do on their plannigs. The user has the ability to delete what has been done and also update the items when they are done. The project is  done by html css and JavaScript',
+      liveVersion: 'https://vigehi.github.io/To-do-list/dist/',
+      source: 'https://github.com/vigehi/To-do-list',
   },
   {
     name: 'Multi post Stories',
@@ -57,7 +54,7 @@ const projectsData = [
     client: 'CANOPY',
     year: 2019,
     id: 3,
-    image: './assets/Snapshoot-Portfolio-3-mobile.svg',
+    image: './assets/img1.jpg',
     technologies: ['html', 'css', 'javascript'],
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
