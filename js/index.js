@@ -25,7 +25,7 @@ const projectsData = [
     name: 'To do list',
     client: 'Myself',
     id: 1,
-    year: 2015,
+    year: 2022,
     image: './assets/img1.jpg',
     technologies: ['html', 'css', 'javascript'],
     description:
