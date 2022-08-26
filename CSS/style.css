@@ -326,8 +326,8 @@ body.active {
   left: 50%;
   top: 1rem;
   transform: translate(-50%, 0);
-  width: 90%;
-  height: 95vh;
+  width: 70%;
+  height: 500px;
   border-radius: 16px;
   padding: 25px;
   background-color: #fff;
@@ -1523,6 +1523,7 @@ textarea {
     justify-content: center;
     border-radius: 50px;
     border: 3px solid rgb(195, 193, 193);
+    height: 500px;
   }
 
   .popup-snapshoot-portfolio img {
