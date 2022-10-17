@@ -30,55 +30,46 @@ const projectsData = [
     technologies: ['html', 'css', 'javascript'],
     description:
     'This is a simple web application built with webpack. It allows a user to add what to do on their plannigs. The user has the ability to delete what has been done and also update the items when they are done. The project is  done by html css and JavaScript',
-      liveVersion: 'https://vigehi.github.io/To-do-list/dist/',
+      liveVersion: 'https://rococo-pithivier-6e6ac9.netlify.app/',
       source: 'https://github.com/vigehi/To-do-list',
   },
   {
-    name: 'Multi post Stories',
-    client: 'CANOPY',
+    name: 'Counselling Sessionss App',
+    client: 'Myself',
     id: 2,
-    year: 2020,
-    image: './assets/Snapshoot-Portfolio-2-mobile.svg',
+    year: 2022,
+    image: './assets/cance.png',
     technologies: ['html', 'css', 'javascript'],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveVersion: 'https://vigehi.github.io/new-Portfolio/',
-    source: 'https://github.com/vigehi/new-Portfolio',
+      'This is a simple web based website that gives more information about current counselling sessions and upcommng counselling session given by Blessed Adegu family, Anyone is invited to visit the site and book gfor counselling sessions to experience best counsellors',
+    liveVersion: 'https://peaceful-puffpuff-3c2f23.netlify.app/',
+    source: 'https://github.com/vigehi/project1',
   },
 
   {
-    name: 'Tonic',
-    client: 'CANOPY',
-    year: 2019,
+    name: 'Series Episodes',
+    client: 'Myself',
+    year: 2022,
     id: 3,
-    image: './assets/img1.jpg',
+    image: './assets/epi.png',
     technologies: ['html', 'css', 'javascript'],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-      liveVersion: 'https://vigehi.github.io/new-Portfolio/',
-      source: 'https://github.com/vigehi/new-Portfolio',
+      'A web based application created in react tha gives the all episodes of a movie series tha allows users to easily get to know more about the series and view the details like and leave a comment, Created data is called from an api',
+      liveVersion: 'https://cerulean-gumdrop-a9551c.netlify.app/',
+      source: 'https://github.com/vigehi/cap1',
   },
 
   {
-    name: 'Multi post Stories',
-    client: 'CANOPY',
+    name: 'Best Technological Post',
+    client: 'Myself',
     year: 2020,
     id: 4,
-    image: './assets/Snapshoot-Portfolio-4-mobile.svg',
-    technologies: ['html', 'css', 'javascript'],
+    image: './assets/tech.png',
+    technologies: ['react', 'css', 'javascript'],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-      liveVersion: 'https://vigehi.github.io/new-Portfolio/',
-      source: 'https://github.com/vigehi/new-Portfolio',
+      'A Technological web based application tha give out technological post posted everyday, the web based application gives details on technology and its trends. It also give more information about the post for users to understand',
+      liveVersion: 'https://whimsical-choux-fb6e7b.netlify.app/',
+      source: 'https://github.com/vigehi/react-capstone-project',
   },
 ];
 
