@@ -22,16 +22,16 @@ navLink.forEach((n) => n.addEventListener("click", closeMenu));
 //= ==========================PROJECTS-CARDS DATA==================================//
 const projectsData = [
   {
-    name: 'To do list',
+    name: 'BAF Consultancy',
     client: 'Myself',
     id: 1,
-    year: 2022,
-    image: './assets/img1.jpg',
+    year: 2023,
+    image: './assets/unnamed.jpg',
     technologies: ['html', 'css', 'javascript'],
     description:
-    'This is a simple web application built with webpack. It allows a user to add what to do on their plannigs. The user has the ability to delete what has been done and also update the items when they are done. The project is  done by html css and JavaScript',
-      liveVersion: 'https://rococo-pithivier-6e6ac9.netlify.app/',
-      source: 'https://github.com/vigehi/To-do-list',
+    'BAF - Consultancy is a mobile platform bringing you verified and approved on-demand skilled consultants to give you quality consultation services',
+      liveVersion: 'https://play.google.com/store/apps/details?id=com.consultancy.baf',
+      source: 'https://github.com/vigehi/',
   },
   {
     name: 'Counselling Sessionss App',
