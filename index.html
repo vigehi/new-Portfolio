@@ -1,371 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/1dea6ac3ad.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-          <div id="projectDetails" class="modal">
-            <!-- Modal content -->
-            <div id="modalContent" class="modal-content">
-              <span class="close">&times;</span>
-              <div id="popupProjectCard">
-                <!-- Details-Popup window will be injected here -->
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/1dea6ac3ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="projectDetails" class="modal">
+    <!-- Modal content -->
+    <div id="modalContent" class="modal-content">
+      <span class="close">&times;</span>
+      <div id="popupProjectCard">
+        <!-- Details-Popup window will be injected here -->
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <!-- <a href="#" id="logo">edith</a>-->
+    <nav class="navBar" id="navbar">
+      <a href="#header" class="navLogo">edith</a>
+      <hr class="rounded">
+      <ul class="navMenu leftArrow">
+        <li class="navItem">
+          <a href="#portfolio" class="navLink">Portfolio <span class="navSpan"></span></a>
+        </li>
+        <li class="navItem">
+          <a href="#about" class="navLink">About <span class="navAbout"></span></a>
+        </li>
+        <li class="navItem">
+          <a href="#contact" class="navLink">Contact <span class="navSpan"></span></a>
+        </li>
+        <li class="navItem"></li>
+      </ul>
+      <a href="#header" class="mobile-logo">edith</a>
+      <ul id="nav">
+        <li class="navigation"><a href="#portfolio">Portfolio</a></li>
+        <li class="navigation"><a href="#about">About</a></li>
+        <li class="navigation"><a href="#contact">Contact</a></li>
+        <li class="navigation"><a href="#" style="color: #6070ff;">+254707920972</a></li>
+      </ul>
+      <div class="mobile-nav">
+        <div class="hamburgerMenu">
+          <span class="hamburgerLine"></span>
+          <span class="hamburgerLine"></span>
+          <span class="hamburgerLine"></span>
+        </div>
+      </div>
+      <ul id="link">
+        <li class="mobile-link">
+          <a href="#">Portfolio</a>
+        </li>
+        <li class="mobile-link">
+          <a href="#">About</a>
+        </li>
+        <li class="mobile-link">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="head-section">
+    <div id="head-container">
+      <h1 class="head">
+        I'm Edith, <br />
+        Glad to see you!
+      </h1>
+      <p class="desc">
+        Hello I’m a software developer! I can help you build a product, feature or website. Look through some of my work
+        and experience! If you like what you see and have a project you need coded,
+        don’t hesitate hestiate to contact me.
+      </p>
+      <h2 class="connect">LET’S CONNECT</h2>
+
+      <ul class="social-media-links">
+        <li>
+          <a href="#" target="_blank" rel="noopener" class="media-link"><i class="fa-brands fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener" class="media-link"><i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener" class="media-link"><i class="fa-brands fa-github fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener" class="media-link"><i class="fa-brands fa-hackerrank fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Works-section begins here -->
+  <main class="grid-container" id="portfolio">
+    <section class="works-card-tonic">
+      <img class="snapshort tonic-img" src="./assets/unnamed.jpg" alt="Snapshot" />
+      <div class="left-block-tonic">
+        <div class="primary-container-tonic">
+          <h1 class="edith-title-tonic">BAF Consultancy</h1>
+          <div class="newme2-tonic">
+            <div class="client">
+              <h3>Myself</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" />
+            <div class="role">
+              <h3>Edith</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" class="dot" />
+            <div class="year">
+              <h3>2023</h3>
             </div>
           </div>
-    <header class="header">
-      <!-- <a href="#" id="logo">edith</a>-->
-      <nav class="navBar" id="navbar">
-        <a href="#header" class="navLogo">edith</a>
-        <hr class="rounded">
-       <ul class="navMenu leftArrow">
-          <li class="navItem">
-            <a href="#portfolio" class="navLink"
-              >Portfolio <span class="navSpan"></span
-            ></a>
+        </div>
+        <p class="edith-desc-tonic">
+          BAF - Consultancy is a mobile platform bringing you verified and approved on-demand skilled consultants
+        </p>
+        <ul class="plangs-tonic">
+          <li class="plang1">
+            <p>html</p>
           </li>
-          <li class="navItem">
-            <a href="#about" class="navLink"
-              >About <span class="navAbout"></span
-            ></a>
+          <li class="plang2">
+            <p>css</p>
           </li>
-          <li class="navItem">
-            <a href="#contact" class="navLink"
-              >Contact <span class="navSpan"></span
-            ></a>
+          <li class="plang3">
+            <p>javascript</p>
           </li>
-          <li class="navItem"></li>
         </ul>
-        <a href="#header" class="mobile-logo">edith</a>
-        <ul id="nav">
-          <li class="navigation"><a href="#portfolio">Portfolio</a></li>
-          <li class="navigation"><a href="#about">About</a></li>
-          <li class="navigation"><a href="#contact">Contact</a></li>
-          <li class="navigation" ><a href="#" style="color: #6070ff;">+254707920972</a></li>
-        </ul>
-        <div class="mobile-nav">
-          <div class="hamburgerMenu">
-            <span class="hamburgerLine"></span>
-            <span class="hamburgerLine"></span>
-            <span class="hamburgerLine"></span>
+        <div class="action ediths-tonic">
+          <button id="seeProjBtn1" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(1)">see
+            projects</button>
+        </div>
+      </div>
+    </section>
+    <section class="works-card">
+      <img class="snapshort img-2" src="./assets/c.png" alt="Snapshot" />
+      <div class="left-block">
+        <div class="primary-container">
+          <h1 class="edith-title">Counselling Sessions</h1>
+          <div class="newme2">
+            <div class="client">
+              <h3>Adegu</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" />
+            <div class="role">
+              <h3>Edith</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" class="dot" />
+            <div class="year">
+              <h3>2022</h3>
+            </div>
           </div>
         </div>
-        <ul id="link">
-          <li class="mobile-link">
-            <a href="#">Portfolio</a>
+        <p class="edith-desc">
+          This is a simple web based website that gives more information about Counselling
+        </p>
+        <ul class="plangs">
+          <li class="plang1">
+            <p>html</p>
           </li>
-          <li class="mobile-link">
-            <a href="#">About</a>
+          <li class="plang2">
+            <p>css</p>
           </li>
-          <li class="mobile-link">
-            <a href="#">Contact</a>
+          <li class="plang3">
+            <p>javascript</p>
           </li>
         </ul>
-      </nav>
-    </header>
+        <div class="action ediths-tonic">
+          <button id="seeProjBtn2" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(2)">see
+            projects</button>
+        </div>
+      </div>
+    </section>
 
-    <section class="head-section">
-      <div id="head-container">
-        <h1 class="head">
-          I'm Edith, <br />
-          Glad to see you!
+    <section class="works-card-tonic">
+      <img class="snapshort tonic-img" src="./assets/episode.png" alt="snapshoot" />
+      <div class="left-block-tonic">
+        <div class="primary-container-tonic">
+          <h1 class="edith-title-tonic">Episodes</h1>
+          <div class="newme2-tonic">
+            <div class="client">
+              <h3>Myself</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" />
+            <div class="role">
+              <h3>Edith</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" class="dot" />
+            <div class="year">
+              <h3>2022</h3>
+            </div>
+          </div>
+        </div>
+        <p class="edith-desc-tonic">
+          A web based application created in react tha gives the all episodes of a movie series
+        </p>
+        <ul class="plangs-tonic">
+          <li class="plang1">
+            <p>html</p>
+          </li>
+          <li class="plang2">
+            <p>css</p>
+          </li>
+          <li class="plang3">
+            <p>javascript</p>
+          </li>
+        </ul>
+        <div class="action ediths-tonic">
+          <button id="seeProjBtn3" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(3)">see
+            projects</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-card">
+      <img class="snapshort" src="./assets/pt.png" alt="napshot" />
+      <div class="left-block">
+        <div class="primary-container">
+          <h1 class="edith-title">Technology</h1>
+          <div class="newme2">
+            <div class="client">
+              <h3>Myself</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" />
+            <div class="role">
+              <h3>Edith</h3>
+            </div>
+            <img src="./assets/Counter.png" alt="counter image" class="dot" />
+            <div class="year">
+              <h3>2022</h3>
+            </div>
+          </div>
+        </div>
+        <p class="edith-desc">
+          A Technological web based application tha give out technological post posted everyday
+        </p>
+        <ul class="plangs">
+          <li class="plang1">
+            <p>html</p>
+          </li>
+          <li class="plang2">
+            <p>css</p>
+          </li>
+          <li class="plang3">
+            <p>javascript</p>
+          </li>
+        </ul>
+        <div class="action ediths-tonic">
+          <button id="seeProjBtn4" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(4)">see
+            projects</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="edith" id="about">
+    <div class="head-section-co">
+      <div id="head-container-co">
+        <h1 class="head-co">
+          About, <br />
+          Myself
         </h1>
-        <p class="desc">
-          I’m a software developer! I can help you build a product, feature or
-          website Look through some of my work and experience. If you like what
-          you see and have a edith you need coded, don’t hesitate to contact me!
+        <p class="desc-co">
+          Hello I’m a software developer! I can help you build a product,
+          feature or website Look through some of my work and experience! If
+          you like what you see and have a project you need coded, don’t
+          hestiate to contact me.
         </p>
-        <h2 class="connect">LET’S CONNECT</h2>
+        <h2 class="connect-co">LET’S CONNECT</h2>
 
-        <ul class="social-media-links">
+        <ul class="social-media-links-co">
           <li>
-            <a href="#" target="_blank" rel="noopener" class="media-link"
-              ><i class="fa-brands fa-twitter fa-2x"></i>
+            <a href="#" target="_blank" rel="noopener" class="media-link-co"><i class="fa-brands fa-twitter fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" rel="noopener" class="media-link"
-              ><i class="fa-brands fa-linkedin fa-2x"></i>
+            <a href="#" target="_blank" rel="noopener" class="media-link-co"><i class="fa-brands fa-linkedin fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" rel="noopener" class="media-link"
-              ><i class="fa-brands fa-github fa-2x"></i>
+            <a href="#" target="_blank" rel="noopener" class="media-link-co"><i class="fa-brands fa-github fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" rel="noopener" class="media-link"
-              ><i class="fa-brands fa-hackerrank fa-2x"></i>
+            <a href="#" target="_blank" rel="noopener" class="media-link-co"><i
+                class="fa-brands fa-hackerrank fa-2x"></i>
             </a>
           </li>
         </ul>
-      </div>
-    </section>
-    <!-- Works-section begins here -->
-    <main class="grid-container" id="portfolio">
-      <section class="works-card-tonic">
-        <img
-          class="snapshort tonic-img"
-          src="./assets/unnamed.jpg"
-          alt="Snapshot"
-        />
-        <div class="left-block-tonic">
-          <div class="primary-container-tonic">
-            <h1 class="edith-title-tonic">BAF Consultancy</h1>
-            <div class="newme2-tonic">
-              <div class="client"><h3>Myself</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" />
-              <div class="role"><h3>Edith</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" class="dot" />
-              <div class="year"><h3>2023</h3></div>
-            </div>
-          </div>
-          <p class="edith-desc-tonic">
-            BAF - Consultancy is a mobile platform bringing you verified and approved on-demand skilled consultants
-          </p>
-          <ul class="plangs-tonic">
-            <li class="plang1"><p>html</p></li>
-            <li class="plang2"><p>css</p></li>
-            <li class="plang3"><p>javascript</p></li>
-          </ul>
-          <div class="action ediths-tonic">
-            <button id="seeProjBtn1" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(1)">see projects</button>
-          </div>
-        </div>
-      </section>
-      <section class="works-card">
-        <img class="snapshort img-2" src="./assets/c.png" alt="Snapshot"  />
-        <div class="left-block">
-          <div class="primary-container">
-            <h1 class="edith-title">Counselling Sessions</h1>
-            <div class="newme2">
-              <div class="client"><h3>Adegu</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" />
-              <div class="role"><h3>Edith</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" class="dot" />
-              <div class="year"><h3>2022</h3></div>
-            </div>
-          </div>
-          <p class="edith-desc">
-            This is a simple web based website that gives more information about Counselling
-          </p>
-          <ul class="plangs">
-            <li class="plang1"><p>html</p></li>
-            <li class="plang2"><p>css</p></li>
-            <li class="plang3"><p>javascript</p></li>
-          </ul>
-          <div class="action ediths-tonic">
-            <button id="seeProjBtn2" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(2)">see projects</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="works-card-tonic">
-        <img
-          class="snapshort tonic-img"
-          src="./assets/episode.png"
-          alt="snapshoot"
-        />
-        <div class="left-block-tonic">
-          <div class="primary-container-tonic">
-            <h1 class="edith-title-tonic">Episodes</h1>
-            <div class="newme2-tonic">
-              <div class="client"><h3>Myself</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" />
-              <div class="role"><h3>Edith</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" class="dot" />
-              <div class="year"><h3>2022</h3></div>
-            </div>
-          </div>
-          <p class="edith-desc-tonic">
-            A web based application created in react tha gives the all episodes of a movie series
-          </p>
-          <ul class="plangs-tonic">
-            <li class="plang1"><p>html</p></li>
-            <li class="plang2"><p>css</p></li>
-            <li class="plang3"><p>javascript</p></li>
-          </ul>
-          <div class="action ediths-tonic">
-            <button id="seeProjBtn3" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(3)">see projects</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="works-card">
-        <img class="snapshort" src="./assets/pt.png" alt="napshot" />
-        <div class="left-block">
-          <div class="primary-container">
-            <h1 class="edith-title">Technology</h1>
-            <div class="newme2">
-              <div class="client"><h3>Myself</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" />
-              <div class="role"><h3>Edith</h3></div>
-              <img src="./assets/Counter.png" alt="counter image" class="dot" />
-              <div class="year"><h3>2022</h3></div>
-            </div>
-          </div>
-          <p class="edith-desc">
-            A Technological web based application tha give out technological post posted everyday
-          </p>
-          <ul class="plangs">
-            <li class="plang1"><p>html</p></li>
-            <li class="plang2"><p>css</p></li>
-            <li class="plang3"><p>javascript</p></li>
-          </ul>
-          <div class="action ediths-tonic">
-            <button id="seeProjBtn4" class="see-project-btn  ediths-tonic go-ediths" onclick="popupDetails(4)">see projects</button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <section class="edith" id="about">
-      <div class="head-section-co">
-        <div id="head-container-co">
-          <h1 class="head-co">
-            About, <br />
-            Myself
-          </h1>
-          <p class="desc-co">
-            Hello I’m a software developer! I can help you build a product,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
-          </p>
-          <h2 class="connect-co">LET’S CONNECT</h2>
-
-          <ul class="social-media-links-co">
-            <li>
-              <a href="#" target="_blank" rel="noopener" class="media-link-co"
-                ><i class="fa-brands fa-twitter fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener" class="media-link-co"
-                ><i class="fa-brands fa-linkedin fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener" class="media-link-co"
-                ><i class="fa-brands fa-github fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener" class="media-link-co"
-                ><i class="fa-brands fa-hackerrank fa-2x"></i>
-              </a>
-            </li>
-          </ul>
-          <div class="ediths-co">
-            <button type="submit" class="go-ediths-co">My resume</button>
-          </div>
-        </div>
-        <div class="skill-list">
-          <div class="newme12">
-            <div class="newme7">
-              <h3 class="languages">Languages</h3>
-              <button type="submit" class="dropbtn">
-                <img src="./assets/dw.png" alt="down arrow" />
-              </button>
-            </div>
-            <ul class="language-list">
-              <li class="newme9">
-                <div class="lang">
-                  <img src="./assets/js.png" alt="javscript png" />
-                  <p>JavaSript</p>
-                </div>
-              </li>
-              <li class="newme10">
-                <div class="lang">
-                  <img src="./assets/html.png" alt="html png" />
-                  <p>HTML</p>
-                </div>
-              </li>
-              <li class="newme11">
-                <div class="lang">
-                  <img src="./assets/css.png" alt="CSS png" />
-                  <p>CSS</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="newme-skill">
-            <div class="newme17">
-              <h3>Frameworks</h3>
-              <button type="submit" class="dropbtn">
-                <img src="./assets/fowa.png" alt="forward arrow" />
-              </button>
-            </div>
-            <img src="./assets/sp.png" alt="separator" class="separator" />
-            <div class="newme18">
-              <h3>Skills</h3>
-              <button type="submit" class="dropbtn">
-                <img src="./assets/fowa.png" alt="forward arrow" />
-              </button>
-            </div>
-            <img src="./assets/sp.png" alt="separator" class="separator" />
-          </div>
+        <div class="ediths-co">
+          <button type="submit" class="go-ediths-co">My resume</button>
         </div>
       </div>
-    </section>
-
-    <section class="contacts" id="contact">
-      <div class="contact-flex">
-        <h2 class="contact-header">Contact me</h2>
-        <p class="contact-desc">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-        <form
-          action="https://formspree.io/f/mqknvnyz"
-          method="post"
-          id="contact-form"
-        >
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
-            required
-            minlength="0"
-            maxlength="30"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-          
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            maxlength="500"
-            placeholder="Write text here"
-            required
-          ></textarea>
-          <button type="submit" class="enabled">Get in touch</button>
-        </form>
-        <p id="email-fail-id" class="email-fail"><small>EMAIL REQUIRES LOWERCASE</small></p>
+      <div class="skill-list">
+        <div class="newme12">
+          <div class="newme7">
+            <h3 class="languages">Languages</h3>
+            <button type="submit" class="dropbtn">
+              <img src="./assets/dw.png" alt="down arrow" />
+            </button>
+          </div>
+          <ul class="language-list">
+            <li class="newme9">
+              <div class="lang">
+                <img src="./assets/js.png" alt="javscript png" />
+                <p>JavaSript</p>
+              </div>
+            </li>
+            <li class="newme10">
+              <div class="lang">
+                <img src="./assets/html.png" alt="html png" />
+                <p>HTML</p>
+              </div>
+            </li>
+            <li class="newme11">
+              <div class="lang">
+                <img src="./assets/css.png" alt="CSS png" />
+                <p>CSS</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="newme-skill">
+          <div class="newme17">
+            <h3>Frameworks</h3>
+            <p>Ruby on Rails, OpenBaraza</p>
+            <button type="submit" class="dropbtn">
+              <img src="./assets/fowa.png" alt="forward arrow" />
+            </button>
+          </div>
+          <img src="./assets/sp.png" alt="separator" class="separator" />
+          <div class="newme18">
+            <h3>Skills</h3>
+            <p>Javascript, Ruby, React</p>
+            <button type="submit" class="dropbtn">
+              <img src="./assets/fowa.png" alt="forward arrow" />
+            </button>
+          </div>
+          <img src="./assets/sp.png" alt="separator" class="separator" />
+        </div>
       </div>
-    </section>
-    <script src="./js/index.js"></script>
-    <script src="./js/valid.js"></script>
-    <script src="./js/savedata.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <section class="contacts" id="contact">
+    <div class="contact-flex">
+      <h2 class="contact-header">Contact me</h2>
+      <p class="contact-desc">
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it
+      </p>
+      <form action="https://formspree.io/f/mqknvnyz" method="post" id="contact-form">
+        <input type="text" name="name" id="name" placeholder="Name" required minlength="0" maxlength="30" />
+        <input type="email" name="email" id="email" placeholder="Email" required />
+
+        <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Write text here"
+          required></textarea>
+        <button type="submit" class="enabled">Get in touch</button>
+      </form>
+      <p id="email-fail-id" class="email-fail"><small>EMAIL REQUIRES LOWERCASE</small></p>
+    </div>
+  </section>
+  <script src="./js/index.js"></script>
+  <script src="./js/valid.js"></script>
+  <script src="./js/savedata.js"></script>
+</body>
+
 </html>

@@ -31,7 +31,7 @@ const projectsData = [
     description:
     'BAF - Consultancy is a mobile platform bringing you verified and approved on-demand skilled consultants to give you quality consultation services',
       liveVersion: 'https://play.google.com/store/apps/details?id=com.consultancy.baf',
-      source: 'https://github.com/vigehi/',
+      source: 'https://github.com/stantheguru/baf',
   },
   {
     name: 'Counselling Sessionss App',
