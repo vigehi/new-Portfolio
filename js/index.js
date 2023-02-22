@@ -22,16 +22,16 @@ navLink.forEach((n) => n.addEventListener("click", closeMenu));
 //= ==========================PROJECTS-CARDS DATA==================================//
 const projectsData = [
   {
-    name: 'BAF Consultancy',
+    name: 'To Do list',
     client: 'Myself',
     id: 1,
     year: 2023,
-    image: './assets/unnamed.jpg',
+    image: './assets/img1.jpg',
     technologies: ['html', 'css', 'javascript'],
     description:
-    'BAF - Consultancy is a mobile platform bringing you verified and approved on-demand skilled consultants to give you quality consultation services',
-      liveVersion: 'https://play.google.com/store/apps/details?id=com.consultancy.baf',
-      source: 'https://github.com/stantheguru/baf',
+    'To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and I do it using ES6 and Webpack!',
+      liveVersion: 'https://vigehi.github.io/To-do-list/dist/',
+      source: 'https://github.com/vigehi/To-do-list',
   },
   {
     name: 'Counselling Sessionss App',
