@@ -1,3 +1,4 @@
+// initialize variables from html
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const navMenu = document.querySelector(".navMenu");
 const navLink = document.querySelectorAll(".navLink");
