@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/1dea6ac3ad.js" crossorigin="anonymous"></script>
+  <script defer src="https://auth.corbado.com/auth.js"></script>
 </head>
 
 <body>
@@ -43,7 +44,7 @@
         <li class="navigation"><a href="#portfolio">Portfolio</a></li>
         <li class="navigation"><a href="#about">About</a></li>
         <li class="navigation"><a href="#contact">Contact</a></li>
-        <li class="navigation"><a href="#" style="color: #6070ff;">+254707920972</a></li>
+        <li class="navigation"><a href="#" style="color: #6070ff;">+254797495525</a></li>
       </ul>
       <div class="mobile-nav">
         <div class="hamburgerMenu">
@@ -337,7 +338,6 @@
     </div>
   </section>
 
-  <section class="contacts" id="contact">
     <div class="contact-flex">
       <h2 class="contact-header">Contact me</h2>
       <p class="contact-desc">
@@ -356,6 +356,12 @@
       <p id="email-fail-id" class="email-fail"><small>EMAIL REQUIRES LOWERCASE</small></p>
     </div>
   </section>
+
+
+  <section class="contacts" id="contact">
+    <corbado-auth project_id="pro-14054635693336001750" conditional="yes">
+      <input name="username" id="corbado-username" value="" required autocomplete="webauthn" autofocus/>
+      </corbado-auth>
   <script src="./js/index.js"></script>
   <script src="./js/valid.js"></script>
   <script src="./js/savedata.js"></script>
